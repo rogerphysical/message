@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>留言系統</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<script type="text/javascript" src="js/script.js"></script>
+		</head>
+	<body>
+    <div class="outer">
+      <div style="margin-top: 140px;">
+        <div style="overflow: hidden; padding: 10px;">
+        	<div class="post1" style="float: left;">暱稱：</div>
+          <div id="ritian" style="float: left;">匿名發言者</div>
+          <div style="float: right; cursor: pointer;" onclick="prom()">點擊此處改變暱稱</div>
+        </div>
+        <textarea id="mes" maxlength="100"></textarea>
+        <div style="overflow: hidden;">
+          <div style="float: left;">留言上限100字</div>
+          <div id="post_bt" onclick="save_data()">留言</div>
+        </div>
+      </div>
+      <div id="comment" style="margin-top: 80px; margin-bottom: 80px;"></div>
+    </div>
+    <div class="footer">
+      Copyright &copy; 2020 坴奉Roger Blogger
+    </div>
+  </body>
+ </html>
