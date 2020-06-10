@@ -1,6 +1,8 @@
 *{
 	margin: 0;
 	box-sizing: border-box;
+	font-size: 26px;
+	font-family: cursive;
 }
 body {
 	background-color: #202;
@@ -15,23 +17,22 @@ body {
 	height: 80px;
 	padding: 10px;
 	resize: none;
-	font-size: 20px;
 	background-color: #FDF;
 	color: #202;
 	overflow: scroll;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-#post_bt {
+.post_bt {
 	float: right;
-	width: 100px;
+	/*width: 100px;*/
 	padding: 8px;
 	cursor: pointer;
-	background-color: #44F;
+	background-color: #00F;
 	text-align: center;
 }
-#post_bt:hover {
-	background-color: #00F;
+.post_bt:hover {
+	background-color: #008;
 }
 .comment {
 	margin: 20px;

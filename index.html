@@ -8,7 +8,7 @@
 		</head>
 	<body>
     <div class="outer">
-      <div style="margin-top: 140px;">
+      <div style="margin-top: 140px; overflow: hidden;">
         <div style="overflow: hidden; padding: 10px;">
         	<div class="post1" style="float: left;">暱稱：</div>
           <div id="ritian" style="float: left;">匿名發言者</div>
@@ -17,8 +17,9 @@
         <textarea id="mes" maxlength="100"></textarea>
         <div style="overflow: hidden;">
           <div style="float: left;">留言上限100字</div>
-          <div id="post_bt" onclick="save_data()">留言</div>
+          <div class="post_bt" onclick="save_data()">留言</div>
         </div>
+        <div style="margin-top: 20px;" class="post_bt" onclick="delete_data()">清空底下留言</div>
       </div>
       <div id="comment" style="margin-top: 80px; margin-bottom: 80px;"></div>
     </div>

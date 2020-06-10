@@ -1,6 +1,8 @@
 function prom() {
   var named = prompt("請輸入您的暱稱", "匿名發言者");
-  document.getElementById("ritian").innerHTML = named;
+  if (named != null) {
+    document.getElementById("ritian").innerHTML = named;
+  }
 }
 function save_data() {
   var data = document.getElementById('mes');
@@ -39,6 +41,13 @@ function write_data() {
     dataHtml += "<div class=\"comment\"><div class=\"comment1\">" + datas_c.who + "</div><div class=\"comment2\">" + datas_c.time + "</div><div class=\"comment3\">" + datas_c.con + "</div></div>";
   }
   document.getElementById("comment").innerHTML = dataHtml;
+}
+function delete_data() {
+  var judge = confirm("確定清空留言嗎?");
+  if (judge == true) {
+    localStorage.clear();
+    write_data();
+  }
 }
 window.onload = function() {
 	write_data();
