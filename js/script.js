@@ -50,7 +50,7 @@ function write_data() {
 function delete_data() {
   var judge = confirm("確定清空留言嗎?");
   if (judge == true) {
-    for(var i = 0; i < localStorage.length; i++) {
+    for(var i = localStorage.length-1; i >= 0 ; i--) {
       var item = localStorage.key(i);
       if (item.substr(0, 8) === "message_") {
         localStorage.removeItem(item);
